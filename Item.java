@@ -5,17 +5,43 @@ class Item {
 
 	//TODO add variable.
 
-	int А = 18;
-	int Б = 5;
-	int В = 0;
+	int A = 18;
+	int B = 5;
+	int V = 0;
 
 	//TODO constructor
 
-
+	public Item(int id, String name, double price) {
+		this.id = id;
+		this.name = name;
+		this.price = price;
+	}
 
 	//TODO setters and getters
 
-	double taxReturn () {
+	void setId(int id) {
+		this.id = id;
+	}
+	int getId() {
+		return this.id;
+	}
+
+	void setName(String name) {
+		this.name = name;
+	}
+	String getName() {
+		return this.name;
+	}
+
+	void setPrice() {
+		this.price = price;
+	}
+	double getPrice() {
+		return this.price;
+	}
+
+	double taxReturn (Item item) {
 		//TODO
+		return item.price * B;
 	}
 }
