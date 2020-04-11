@@ -5,9 +5,9 @@ class Item {
 
 	//TODO add variable.
 
-	int A = 18;
-	int B = 5;
-	int V = 0;
+	int A = 1.18;
+	int B = 1.05;
+	int V = 1.0;
 
 	//TODO constructor
 
@@ -42,6 +42,6 @@ class Item {
 
 	double taxReturn (Item item) {
 		//TODO
-		return item.price * B;
+		return item.price * 0.15;
 	}
 }
